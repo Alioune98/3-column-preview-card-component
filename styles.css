@@ -1,0 +1,108 @@
+*,
+::after,
+::before{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container{
+  max-width: 500px;
+  width: 89%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin:5.5rem auto;
+}
+
+.sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedans .btn{
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs .btn{
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury .btn{
+  color: hsl(179, 100%, 13%);
+}
+
+.inner-content{
+  padding: 3em;
+}
+
+.inner-content h1{
+  /* Positioning */
+  margin-top: .8em;
+  margin-bottom: .7em;
+  /* Typography */
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  /* Visual */
+  color: hsl(0, 0%, 95%);
+}
+
+.inner-content p{
+  /* Box-model */
+  margin-bottom: 1.6em;
+  /* Typography */
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  line-height: 1.7rem;
+  /* Visual */
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn{
+  /* Positioning */
+  position: relative;
+  width: 140px;
+  height: 40px;
+  /* Box-model */
+  border: none;
+  border-radius: 25px;
+  /* Typography */
+  font-family:'Lexend Deca', sans-serif;
+  font-size: 15px;
+  /* Visual */
+  background-color: hsl(0, 0%, 95%);
+  /* Misc */
+}
+
+.btn:hover{
+  /* Box-model */
+  border: 2px solid hsl(0, 0%, 95%);
+  /* Typography */
+  color: hsl(0, 0%, 95%);
+  /* Visual */
+  background-color: inherit;
+}
+
+@media (min-width: 820px) {
+  .container{
+    /* Positioning */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+    height: 100%;
+    /* Box-model */
+    margin: 10em auto;
+  }
+
+  .inner-content p{
+    /* Positioning */
+    max-width: 14em;
+    /* Box-model */
+    margin-bottom: 5em;
+  }
+}
