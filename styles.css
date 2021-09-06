@@ -11,7 +11,7 @@ body{
 
 .container{
   max-width: 500px;
-  max-width: 89%;
+  width: 89%;
   border-radius: 8px;
   overflow: hidden;
   margin:5.5rem auto;
@@ -98,6 +98,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 900px;
+    width: 89%;
     height: 100%;
     /* Box-model */
     margin: 11em auto;
@@ -106,7 +107,7 @@ body{
   .inner-content p{
     /* Positioning */
     max-width: 14em;
-    width: 20em;
+    width: 10em;
     /* Box-model */
     margin-bottom: 5em;
   }
